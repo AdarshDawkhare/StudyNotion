@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|e:\\studynotion\\dotnetserver\\studynotionserver\\repositorylayer\\studynotionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|solutionrelative:repositorylayer\\studynotionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|e:\\studynotion\\dotnetserver\\studynotionserver\\repositorylayer\\istudynotionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|solutionrelative:repositorylayer\\istudynotionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|e:\\studynotion\\dotnetserver\\studynotionserver\\servicelayer\\studynotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|solutionrelative:servicelayer\\studynotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|e:\\studynotion\\dotnetserver\\studynotionserver\\servicelayer\\models\\registeruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|solutionrelative:servicelayer\\models\\registeruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|e:\\studynotion\\dotnetserver\\studynotionserver\\servicelayer\\istudynotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|solutionrelative:servicelayer\\istudynotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|e:\\studynotion\\dotnetserver\\studynotionserver\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81978081-BE1E-4DA3-B164-30FBCB79F2A7}|StudyNotionServer.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterUser.cs",
+              "DocumentMoniker": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\ServiceLayer\\Models\\RegisterUser.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Models\\RegisterUser.cs",
+              "ToolTip": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\ServiceLayer\\Models\\RegisterUser.cs",
+              "RelativeToolTip": "ServiceLayer\\Models\\RegisterUser.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:26:22.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IStudyNotionRepo.cs",
+              "DocumentMoniker": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\RepositoryLayer\\IStudyNotionRepo.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\IStudyNotionRepo.cs",
+              "ToolTip": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\RepositoryLayer\\IStudyNotionRepo.cs",
+              "RelativeToolTip": "RepositoryLayer\\IStudyNotionRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:14:49.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudyNotionRepo.cs",
+              "DocumentMoniker": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\RepositoryLayer\\StudyNotionRepo.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\StudyNotionRepo.cs",
+              "ToolTip": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\RepositoryLayer\\StudyNotionRepo.cs",
+              "RelativeToolTip": "RepositoryLayer\\StudyNotionRepo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:14:48.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudyNotionS.cs",
+              "DocumentMoniker": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\ServiceLayer\\StudyNotionS.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\StudyNotionS.cs",
+              "ToolTip": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\ServiceLayer\\StudyNotionS.cs",
+              "RelativeToolTip": "ServiceLayer\\StudyNotionS.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowEwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T15:37:09.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IStudyNotionS.cs",
+              "DocumentMoniker": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\ServiceLayer\\IStudyNotionS.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\IStudyNotionS.cs",
+              "ToolTip": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\ServiceLayer\\IStudyNotionS.cs",
+              "RelativeToolTip": "ServiceLayer\\IStudyNotionS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T18:20:04.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "E:\\StudyNotion\\DotnetServer\\StudyNotionServer\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T17:49:00.153Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

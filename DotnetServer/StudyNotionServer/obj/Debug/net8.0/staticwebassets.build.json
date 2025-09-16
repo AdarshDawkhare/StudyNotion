@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "2v6N1aWv6E2rm63cg9a3uu2ZrtCNQuThltPFnW0b/t8=",
+  "Source": "StudyNotionServer",
+  "BasePath": "_content/StudyNotionServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

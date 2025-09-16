@@ -1,0 +1,6 @@
+@StudyNotionServer_HostAddress = http://localhost:5125
+
+GET {{StudyNotionServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
