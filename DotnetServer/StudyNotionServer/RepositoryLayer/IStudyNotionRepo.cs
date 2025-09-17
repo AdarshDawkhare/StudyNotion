@@ -7,9 +7,9 @@ namespace StudyNotionServer.RepositoryLayer
     {
         public Task<RegisterUserResponse> RegisterUser(User request);
 
-        public Task<LoginUserResponse> LoginUser(LoginUserRequest request);
-
         public Task<bool> UserExist(LoginUserRequest request);
+
+        public Task<User?> GetUser(LoginUserRequest request);
 
     }
 }

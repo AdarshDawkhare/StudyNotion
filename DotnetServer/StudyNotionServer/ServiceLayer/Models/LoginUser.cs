@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using StudyNotionServer.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace StudyNotionServer.ServiceLayer.Models
 {
@@ -19,5 +20,7 @@ namespace StudyNotionServer.ServiceLayer.Models
         public bool Success { get; set; }
 
         public string Message { get; set; }
+
+        public User? user { get; set; }
     }
 }

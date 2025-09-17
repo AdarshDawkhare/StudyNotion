@@ -1,4 +1,7 @@
 ﻿using System.Net;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using StudyNotionServer.Data;
 using StudyNotionServer.ServiceLayer;
@@ -87,12 +90,32 @@ namespace StudyNotionServer.Controllers
 
                 if (response != null)
                 {
-                    if (response.Success)
+                    if (response.Success && response.user != null)
                     {
+                        // Build claims
+                        var claims = new List<Claim>
+                        {
+                            new Claim(ClaimTypes.NameIdentifier,response.user.Id),
+                            new Claim(ClaimTypes.Name, $"{response.user.FirstName} {response.user.LastName}"),
+                            new Claim(ClaimTypes.Email, response.user.Email),
+                            new Claim(ClaimTypes.Role, response.user.AccountType.ToString())
+                        };
+
+                        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        var principal = new ClaimsPrincipal(identity);
+
+                        var props = new AuthenticationProperties
+                        {
+                            IsPersistent = true,
+                            ExpiresUtc = DateTimeOffset.UtcNow.AddDays(14)
+                        };
+
+                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, props);
+
                         return Ok(new
                         {
                             success = response.Success,
-                            message = "successfully registered the user",
+                            message = "login successful",
                         });
                     }
                     else

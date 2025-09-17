@@ -44,11 +44,6 @@ namespace StudyNotionServer.RepositoryLayer
             return response;
         }
 
-        public async Task<LoginUserResponse> LoginUser(LoginUserRequest request)
-        {
-
-        }
-
         public async Task<bool> UserExist(LoginUserRequest request)
         {
             var exists = await _db.Users.AnyAsync(user => user.Email == request.Email);
@@ -62,5 +57,11 @@ namespace StudyNotionServer.RepositoryLayer
                 return false;
             }
         }
+
+        public async Task<User?> GetUser(LoginUserRequest request)
+        {
+            return await _db.Users.FirstOrDefaultAsync(u => u.Email == request.Email && u.PasswordHash == request.Password);
+        }
+
     }
 }
