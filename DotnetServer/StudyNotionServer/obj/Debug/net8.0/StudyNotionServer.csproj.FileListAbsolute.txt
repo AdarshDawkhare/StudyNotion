@@ -293,3 +293,12 @@ E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0
 E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\StudyNotionServer.pdb
 E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\StudyNotionServer.genruntimeconfig.cache
 E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\ref\StudyNotionServer.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\StudyNotionServer.sourcelink.json

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using StudyNotionServer.Data;
 using StudyNotionServer.RepositoryLayer;
+using StudyNotionServer.Seed;
 using StudyNotionServer.ServiceLayer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -60,6 +61,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseHttpsRedirection();
 
