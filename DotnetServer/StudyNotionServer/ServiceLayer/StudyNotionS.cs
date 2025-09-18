@@ -79,12 +79,47 @@ namespace StudyNotionServer.ServiceLayer
 
         public async Task<LoginUserResponse> LoginUser(LoginUserRequest request)
         {
-            return await _repo.LoginUser(request);
+            //First check whether user is already exist or not 
+            User? user = await GetUser(new LoginUserRequest { Email = request.Email, Password = BCrypt.Net.BCrypt.HashPassword(request.Password) });
+
+            if (user != null)
+            {
+                 return new LoginUserResponse { Success = true , Message = "login successful" , user = user };
+            }
+            else
+            {
+                return new LoginUserResponse 
+                {
+                    Success = false,
+                    Message = "Invalid credentials"
+                };
+            }
         }
 
         public async Task<bool> UserExist(LoginUserRequest request)
         {
             return await _repo.UserExist(request);
+        }
+
+        public async Task<User?> GetUser(LoginUserRequest request)
+        {
+            if (request != null)
+            {
+                if (string.IsNullOrEmpty(request.Email) && string.IsNullOrEmpty(request.Email))
+                {
+                    request.Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
+
+                    return await _repo.GetUser(request);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else 
+            {
+                return null;
+            }
         }
     }
 }

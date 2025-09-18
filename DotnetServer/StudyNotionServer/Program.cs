@@ -50,7 +50,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IStudyNotionS, StudyNotionS>();
-builder.Services.AddScoped<IStudyNotionRepo, IStudyNotionRepo>();
+builder.Services.AddScoped<IStudyNotionRepo, StudyNotionRepo>();
 
 var app = builder.Build();
 
