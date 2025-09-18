@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using StudyNotionServer.Data;
 using StudyNotionServer.ServiceLayer;
 using StudyNotionServer.ServiceLayer.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace StudyNotionServer.Controllers
 {
     [ApiController]
-    [Route("api/[cotroller]")]
+    [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
         private readonly IStudyNotionS _serviceLayer;
@@ -148,5 +149,13 @@ namespace StudyNotionServer.Controllers
         }
 
 
+        [Authorize]
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            return Ok(new {success = true, message = "logout successful" });
+        }
     }
 }
