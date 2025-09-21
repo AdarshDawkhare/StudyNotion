@@ -17,8 +17,8 @@ namespace StudyNotionServer.Data
 
         // Reference to Instructor
         [Required,BsonRepresentation(BsonType.ObjectId)]
-        public string InstructorId { get; set; } =string.Empty;
-        public User? Instructor { get; set; }
+        public string InstructorId { get; set; } = string.Empty;
+        public User Instructor { get; set; }
 
         // Reference to section
         [BsonRepresentation(BsonType.ObjectId)]

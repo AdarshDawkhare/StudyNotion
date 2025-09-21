@@ -8,6 +8,7 @@ namespace StudyNotionServer.Data
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; } = string.Empty;
+
         public string SectionName { get; set; } = string.Empty;
 
         //Reference to subsection

@@ -13,5 +13,9 @@ namespace StudyNotionServer.Data
         public string timeDuration { get; set; } = string.Empty ;
         public string Description { get; set; } = string.Empty;
         public string VideoUrl { get; set; } = string.Empty;
+
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string SectionId { get; set; } = string.Empty;
+        public Section? section { get; set; }
     }
 }

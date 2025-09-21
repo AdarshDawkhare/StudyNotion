@@ -30,8 +30,7 @@ namespace StudyNotionServer.Data
         public string Image { get; set; } = string.Empty;
 
 
-        // Reference to Profile
-        [Required]
+        // Reference to Profile --> user created but profile filled later), consider removing [Required].
         [BsonRepresentation(BsonType.ObjectId)]
         public string ProfileId { get; set; } = string.Empty;
         public Profile? Profile { get; set; }
@@ -45,7 +44,7 @@ namespace StudyNotionServer.Data
 
 
         [BsonRepresentation(BsonType.ObjectId)]
-        public List<ObjectId> CourseProgressIds { get; set; }
+        public List<string> CourseProgressIds { get; set; }
         public List<CourseProgress> CourseProgresses    { get; set; }
     }
 

@@ -17,5 +17,10 @@ namespace StudyNotionServer.Data
         [BsonRepresentation(BsonType.ObjectId)]
         public string UserId { get; set; } = string.Empty;
         public User? user { get; set; }
+
+
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string CourseId { get; set; } = string.Empty;
+        public Course? Course { get; set; }
     }
 }
