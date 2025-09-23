@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudyNotionServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5462a97be944e58016d45ca18ae5978b6d672a22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c82377c112f195f0a9387f7879a6df1b4adbe377")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudyNotionServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudyNotionServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

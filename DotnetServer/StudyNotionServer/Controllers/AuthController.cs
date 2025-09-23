@@ -75,7 +75,7 @@ namespace StudyNotionServer.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new
                 {
                     success = false,
-                    message = "exception occured"
+                    message = $"exception occured - {ex.ToString()}"
                 });
             }
         }

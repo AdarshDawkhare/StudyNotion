@@ -30,10 +30,17 @@ namespace StudyNotionServer.RepositoryLayer
                 }
                 else
                 {
-                    _db.Users.Add(request);
-                    await _db.SaveChangesAsync();
-                    response.Success = true;
-                    response.Message = "user added";
+                    try
+                    {
+                        _db.Users.Add(request);
+                        await _db.SaveChangesAsync();
+                        response.Success = true;
+                        response.Message = "user added";
+                    }
+                    catch(Exception ex)
+                    {
+                        response.Message = ex.ToString(); 
+                    }        
                 }
             }
             else
@@ -60,7 +67,16 @@ namespace StudyNotionServer.RepositoryLayer
 
         public async Task<User?> GetUser(LoginUserRequest request)
         {
-            return await _db.Users.FirstOrDefaultAsync(u => u.Email == request.Email && u.PasswordHash == request.Password);
+            User user = await _db.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
+
+            if(user != null)
+            {
+                return user;
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }

@@ -9,7 +9,7 @@ namespace StudyNotionServer.Data
         // MongoDB primary key
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; } = string.Empty;
+        public string? Id { get; set; } = ObjectId.GenerateNewId().ToString();
 
         [Required]
         public string FirstName { get; set; } = string.Empty;
@@ -26,26 +26,26 @@ namespace StudyNotionServer.Data
         [Required]
         public accountType AccountType { get; set; }
 
-        [Required]
-        public string Image { get; set; } = string.Empty;
+
+        public string? Image { get; set; }
 
 
         // Reference to Profile --> user created but profile filled later), consider removing [Required].
         [BsonRepresentation(BsonType.ObjectId)]
-        public string ProfileId { get; set; } = string.Empty;
+        public string? ProfileId { get; set; }
         public Profile? Profile { get; set; }
 
 
         // Reference to Courses (Foreign Key style)
         [BsonRepresentation(BsonType.ObjectId)]
-        public List<string> CourseIds { get; set; } = new();
-        public List<Course> Courses { get; set; }
+        public List<string> CourseIds { get; set; } = new List<string>();
+        public List<Course> Courses { get; set; } = new List<Course>();
 
 
 
         [BsonRepresentation(BsonType.ObjectId)]
-        public List<string> CourseProgressIds { get; set; }
-        public List<CourseProgress> CourseProgresses    { get; set; }
+        public List<string> CourseProgressIds { get; set; } = new List<string>();
+        public List<CourseProgress> CourseProgresses { get; set; } = new List<CourseProgress>();
     }
 
     public enum accountType

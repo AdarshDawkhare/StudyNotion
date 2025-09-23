@@ -22,7 +22,7 @@ namespace StudyNotionServer.ServiceLayer.Models
 
         public string Image {  get; set; }
 
-        public string? ProfileId { get; set; }     // optional during registration
+        public string? ProfileId { get; set; } = "none";    // optional during registration
 
         [Required(ErrorMessage = "AccountType must be mentioned")]
         public string AccountType { get; set; }     // "Admin" | "Student" | "Instructor"

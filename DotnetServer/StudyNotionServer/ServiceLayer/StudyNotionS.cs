@@ -1,4 +1,5 @@
-﻿using StudyNotionServer.Data;
+﻿using BCrypt.Net;
+using StudyNotionServer.Data;
 using StudyNotionServer.RepositoryLayer;
 using StudyNotionServer.ServiceLayer.Models;
 
@@ -27,7 +28,7 @@ namespace StudyNotionServer.ServiceLayer
                 };
             }
 
-            bool isUserAlreadyExists = await _repo.UserExist(new LoginUserRequest { Email = request.Email, Password = BCrypt.Net.BCrypt.HashPassword(request.Password) });
+            bool isUserAlreadyExists = await _repo.UserExist(new LoginUserRequest { Email = request.Email});
 
             if (isUserAlreadyExists)
             {
@@ -80,11 +81,22 @@ namespace StudyNotionServer.ServiceLayer
         public async Task<LoginUserResponse> LoginUser(LoginUserRequest request)
         {
             //First check whether user is already exist or not 
-            User? user = await GetUser(new LoginUserRequest { Email = request.Email, Password = BCrypt.Net.BCrypt.HashPassword(request.Password) });
+            User? user = await GetUser(new LoginUserRequest { Email = request.Email});
 
             if (user != null)
             {
-                 return new LoginUserResponse { Success = true , Message = "login successful" , user = user };
+                if (BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+                {
+                    return new LoginUserResponse { Success = true, Message = "login successful", user = user };
+                }
+                else
+                {
+                    return new LoginUserResponse
+                    {
+                        Success = false,
+                        Message = "Invalid credentials"
+                    };
+                }           
             }
             else
             {
@@ -105,10 +117,8 @@ namespace StudyNotionServer.ServiceLayer
         {
             if (request != null)
             {
-                if (string.IsNullOrEmpty(request.Email) && string.IsNullOrEmpty(request.Email))
+                if (!string.IsNullOrEmpty(request.Email))
                 {
-                    request.Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
-
                     return await _repo.GetUser(request);
                 }
                 else
