@@ -1,0 +1,12 @@
+﻿
+
+-------------- MongoDB Configurations-------------------------------------------------
+
+project name - StudyNotion
+cluster name - StudyNotion
+
+Users - 
+
+user name - root
+password - Adarsh@123
+connection string - mongodb+srv://root:Adarsh@123@studynotion.dqwhcxd.mongodb.net/?retryWrites=true&w=majority&appName=StudyNotion

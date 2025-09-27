@@ -1,3 +1,18 @@
 
 # Ignore Visual Studio temporary files
 .vs/
+
+
+#Ignore Learnings and models reference files of root directory
+./Learnings.docx
+./models.txt
+
+#Ignore .env file from server
+./server/.env
+
+# Ignore Configurations , appsettings in DotnetServer/StudyNotionServer
+
+./DotnetServer/StudyNotionServer/Configurations
+./DotnetServer/StudyNotionServer/appsettings.json
+./DotnetServer/StudyNotionServer/appsettings.*.json
+
