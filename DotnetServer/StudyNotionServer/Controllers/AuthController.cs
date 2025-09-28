@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
-using StudyNotionServer.Data;
-using StudyNotionServer.ServiceLayer;
 using StudyNotionServer.ServiceLayer.Models;
 using Microsoft.AspNetCore.Authorization;
+using StudyNotionServer.ServiceLayer.Interfaces;
+using Domain.Entities;
 
 namespace StudyNotionServer.Controllers
 {
@@ -14,9 +14,9 @@ namespace StudyNotionServer.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly IStudyNotionS _serviceLayer;
+        private readonly IAuthS _serviceLayer;
         private readonly ILogger<AuthController> _logger;
-        public AuthController(IStudyNotionS serviceLayer,ILogger<AuthController> logger) {
+        public AuthController(IAuthS serviceLayer,ILogger<AuthController> logger) {
 
             _serviceLayer = serviceLayer;
             _logger = logger;
@@ -28,21 +28,20 @@ namespace StudyNotionServer.Controllers
         {
             try
             {
-                RegisterUserResponse response = await _serviceLayer.RegisterUser(request);
+                Response response = await _serviceLayer.RegisterUser(request);
 
                 if (response != null) 
                 {
-                    if (response.Success) 
+                    if (response.IsSuccess) 
                     {
                         return Ok(new{
-                            success = response.Success,
+                            success = response.IsSuccess,
                             message = "successfully registered the user",
-                            data = response.RegisteredUser
                         });
                     }
                     else
                     {
-                        if(! response.Success && string.Equals(response.Message.ToLower(), "invalid account type"))
+                        if(! response.IsSuccess && string.Equals(response.Message.ToLower(),"invalid account type"))
                         {
                             return BadRequest(new
                             {
@@ -54,7 +53,7 @@ namespace StudyNotionServer.Controllers
                         {
                             return Ok(new
                             {
-                                success = response.Success,
+                                success = response.IsSuccess,
                                 message = response.Message
                             });
                         }

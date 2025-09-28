@@ -1,5 +1,5 @@
-﻿using StudyNotionServer.Data;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using Domain.Entities;
 
 namespace StudyNotionServer.ServiceLayer.Models
 {

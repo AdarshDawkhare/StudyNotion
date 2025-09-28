@@ -302,3 +302,7 @@ E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\System.Security.C
 E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 E:\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\StudyNotionServer.sourcelink.json
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Domain.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Infrastructure.dll
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Domain.pdb
+E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Infrastructure.pdb

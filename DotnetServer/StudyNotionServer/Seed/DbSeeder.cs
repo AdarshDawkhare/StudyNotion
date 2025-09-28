@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using StudyNotionServer.Data;
+﻿using Domain.Entities;
+using Infrastructure.DB;
+using Microsoft.EntityFrameworkCore;
 
 namespace StudyNotionServer.Seed
 {

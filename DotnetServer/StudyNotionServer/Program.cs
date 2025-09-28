@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Identity.UI.Services;
+﻿using Domain.Interface;
+using Infrastructure.DB;
+using Infrastructure.Repositories;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using StudyNotionServer.Data;
 using StudyNotionServer.Module.Email;
-using StudyNotionServer.RepositoryLayer;
-using StudyNotionServer.Seed;
-using StudyNotionServer.ServiceLayer;
+using StudyNotionServer.ServiceLayer.Classes;
+using StudyNotionServer.ServiceLayer.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,9 +52,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IStudyNotionS, StudyNotionS>();
-builder.Services.AddScoped<IStudyNotionRepo, StudyNotionRepo>();
+builder.Services.AddScoped<IAuthS, AuthS>();
 builder.Services.AddScoped<StudyNotionServer.Module.Email.IEmailSender, EmailSender>();
+builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 
 var app = builder.Build();
 

@@ -1,0 +1,13 @@
+E:\StudyNotion\DotnetServer\Domain\bin\Debug\net8.0\Domain.deps.json
+E:\StudyNotion\DotnetServer\Domain\bin\Debug\net8.0\Domain.dll
+E:\StudyNotion\DotnetServer\Domain\bin\Debug\net8.0\Domain.pdb
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.dll
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\refint\Domain.dll
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.pdb
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\ref\Domain.dll
+E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache

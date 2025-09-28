@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyNotionServer", "StudyNotionServer.csproj", "{81978081-BE1E-4DA3-B164-30FBCB79F2A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\Domain\Domain.csproj", "{8BFE1C75-DC44-45CF-A93D-CDE4F858174E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{BED27DE4-3E86-48BC-9A1A-9CA6C2A8A552}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{81978081-BE1E-4DA3-B164-30FBCB79F2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81978081-BE1E-4DA3-B164-30FBCB79F2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81978081-BE1E-4DA3-B164-30FBCB79F2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFE1C75-DC44-45CF-A93D-CDE4F858174E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFE1C75-DC44-45CF-A93D-CDE4F858174E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFE1C75-DC44-45CF-A93D-CDE4F858174E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFE1C75-DC44-45CF-A93D-CDE4F858174E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED27DE4-3E86-48BC-9A1A-9CA6C2A8A552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED27DE4-3E86-48BC-9A1A-9CA6C2A8A552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED27DE4-3E86-48BC-9A1A-9CA6C2A8A552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED27DE4-3E86-48BC-9A1A-9CA6C2A8A552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

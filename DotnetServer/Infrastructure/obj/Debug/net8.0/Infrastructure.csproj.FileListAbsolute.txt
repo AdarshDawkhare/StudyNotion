@@ -1,0 +1,16 @@
+E:\StudyNotion\DotnetServer\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+E:\StudyNotion\DotnetServer\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+E:\StudyNotion\DotnetServer\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+E:\StudyNotion\DotnetServer\Infrastructure\bin\Debug\net8.0\Domain.dll
+E:\StudyNotion\DotnetServer\Infrastructure\bin\Debug\net8.0\Domain.pdb
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+E:\StudyNotion\DotnetServer\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
