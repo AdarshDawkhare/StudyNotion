@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using StudyNotionServer.Data;
+using StudyNotionServer.Module.Email;
 using StudyNotionServer.RepositoryLayer;
 using StudyNotionServer.Seed;
 using StudyNotionServer.ServiceLayer;
@@ -52,6 +54,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IStudyNotionS, StudyNotionS>();
 builder.Services.AddScoped<IStudyNotionRepo, StudyNotionRepo>();
+builder.Services.AddScoped<StudyNotionServer.Module.Email.IEmailSender, EmailSender>();
 
 var app = builder.Build();
 
