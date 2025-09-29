@@ -11,3 +11,16 @@ E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\refint\Domain.dll
 E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.pdb
 E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\ref\Domain.dll
 E:\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\bin\Debug\net8.0\Domain.deps.json
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\bin\Debug\net8.0\Domain.dll
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\bin\Debug\net8.0\Domain.pdb
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.dll
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\refint\Domain.dll
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\Domain.pdb
+E:\Personal Practice\StudyNotion\DotnetServer\Domain\obj\Debug\net8.0\ref\Domain.dll

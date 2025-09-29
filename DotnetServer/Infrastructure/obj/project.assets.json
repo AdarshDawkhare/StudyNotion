@@ -1191,23 +1191,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adars\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\StudyNotion\\DotnetServer\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "E:\\Personal Practice\\StudyNotion\\DotnetServer\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "E:\\StudyNotion\\DotnetServer\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\adars\\.nuget\\packages\\",
-      "outputPath": "E:\\StudyNotion\\DotnetServer\\Infrastructure\\obj\\",
+      "projectPath": "E:\\Personal Practice\\StudyNotion\\DotnetServer\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\Personal Practice\\StudyNotion\\DotnetServer\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\adars\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1216,14 +1216,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core 2024 Q4": {},
+        "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core 2024 Q4\\wrappers\\aspnetcore\\Binaries\\AspNet.Core": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\StudyNotion\\DotnetServer\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\StudyNotion\\DotnetServer\\Domain\\Domain.csproj"
+            "E:\\Personal Practice\\StudyNotion\\DotnetServer\\Domain\\Domain.csproj": {
+              "projectPath": "E:\\Personal Practice\\StudyNotion\\DotnetServer\\Domain\\Domain.csproj"
             }
           }
         }

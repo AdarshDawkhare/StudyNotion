@@ -1,7 +1,6 @@
-﻿using BCrypt.Net;
+﻿using Domain.Entities;
 using Domain.Interface;
-using Domain.Entities;
-
+using StudyNotionServer.Module.Email;
 using StudyNotionServer.ServiceLayer.Interfaces;
 using StudyNotionServer.ServiceLayer.Models;
 
@@ -10,9 +9,11 @@ namespace StudyNotionServer.ServiceLayer.Classes
     public class AuthS : IAuthS
     {
         private readonly IAuthRepository _authRepository;
-        public AuthS(IAuthRepository authRepository)
+        private readonly IEmailSender _emailSender;
+        public AuthS(IAuthRepository authRepository,IEmailSender emailSender)
         {
             _authRepository = authRepository;
+            _emailSender = emailSender;
         }
 
         public async Task<Response> RegisterUser(RegisterUserRequest request)
@@ -28,9 +29,9 @@ namespace StudyNotionServer.ServiceLayer.Classes
                 };
             }
 
-            bool isUserAlreadyExists = await _authRepository.UserExist(request.Email);
+            User? user = await _authRepository.GetUser(request.Email);
 
-            if (isUserAlreadyExists)
+            if (user != null)
             {
                 return new Response
                 {
@@ -64,7 +65,7 @@ namespace StudyNotionServer.ServiceLayer.Classes
                     break;
             }
 
-            User user = new User
+            User newUser = new User
             {
                 FirstName = request.FirstName,
                 LastName = request.LastName,
@@ -74,7 +75,7 @@ namespace StudyNotionServer.ServiceLayer.Classes
                 Image = request.Image
             };
 
-            return await _authRepository.AddUser(user);
+            return await _authRepository.AddUser(newUser);
         }
 
         public async Task<LoginUserResponse> LoginUser(LoginUserRequest request)
@@ -99,11 +100,6 @@ namespace StudyNotionServer.ServiceLayer.Classes
             }
         }
 
-        public async Task<bool> UserExist(LoginUserRequest request)
-        {
-            return await _authRepository.UserExist(request.Email);
-        }
-
         public async Task<User?> GetUser(LoginUserRequest request)
         {
             if (request != null)
@@ -121,6 +117,11 @@ namespace StudyNotionServer.ServiceLayer.Classes
             {
                 return null;
             }
+        }
+
+        public async Task<bool> SendEmail(string email, string subject, string message)
+        {
+            return await _emailSender.SendEmailAsync(email,subject,message); 
         }
     }
 }

@@ -141,8 +141,6 @@ E:\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\refint\StudyNotio
 E:\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\StudyNotionServer.pdb
 E:\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\StudyNotionServer.genruntimeconfig.cache
 E:\StudyNotion\DotnetServer\StudyNotionServer\obj\Debug\net8.0\ref\StudyNotionServer.dll
-E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\appsettings.Development.json
-E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\appsettings.json
 E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\StudyNotionServer.staticwebassets.endpoints.json
 E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\StudyNotionServer.exe
 E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\StudyNotionServer.deps.json
@@ -306,3 +304,7 @@ E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Domain.dll
 E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Infrastructure.dll
 E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Domain.pdb
 E:\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Infrastructure.pdb
+E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Domain.dll
+E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Infrastructure.dll
+E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Domain.pdb
+E:\Personal Practice\StudyNotion\DotnetServer\StudyNotionServer\bin\Debug\net8.0\Infrastructure.pdb

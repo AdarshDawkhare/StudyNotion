@@ -142,7 +142,7 @@ namespace StudyNotionServer.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new
                 {
                     success = false,
-                    message = "exception occured"
+                    message = "exception occurred"
                 });
             }
         }
@@ -155,6 +155,32 @@ namespace StudyNotionServer.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             return Ok(new {success = true, message = "logout successful" });
+        }
+
+        public async Task<IActionResult> SendEmail(string email,string subject,string message)
+        {
+            try
+            {
+                bool Result = await _serviceLayer.SendEmail(email, subject, message);
+
+                if (Result)
+                {
+                    return Ok(new { success = true , message = "email send successful"} );
+                }
+                else
+                {
+                    return Ok(new{ success = false,message = "error occurred while sending the email"});
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Exception occurred while sending an email - {ex.ToString()}");
+                return StatusCode(StatusCodes.Status500InternalServerError,new
+                {
+                    success = false,
+                    message = "internal server error"
+                });
+            }
         }
     }
 }

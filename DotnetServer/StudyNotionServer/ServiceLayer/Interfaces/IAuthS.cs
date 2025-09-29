@@ -9,8 +9,8 @@ namespace StudyNotionServer.ServiceLayer.Interfaces
 
         public Task<LoginUserResponse> LoginUser(LoginUserRequest request);
 
-        public Task<bool> UserExist(LoginUserRequest request);
-
         public Task<User?> GetUser(LoginUserRequest request);
+
+        public Task<bool> SendEmail(string email,string subject , string message);
     }
 }
