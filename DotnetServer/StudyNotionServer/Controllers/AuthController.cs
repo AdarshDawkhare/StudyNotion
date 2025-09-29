@@ -157,6 +157,7 @@ namespace StudyNotionServer.Controllers
             return Ok(new {success = true, message = "logout successful" });
         }
 
+        [HttpPost("sendmail")]
         public async Task<IActionResult> SendEmail(string email,string subject,string message)
         {
             try

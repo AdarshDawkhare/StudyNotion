@@ -1,6 +1,5 @@
 ﻿using System.Net;
 using System.Net.Mail;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace StudyNotionServer.Module.Email
 {
@@ -43,11 +42,11 @@ namespace StudyNotionServer.Module.Email
                 {
                     EnableSsl = true,
                     UseDefaultCredentials = false, // IMPORTANT: must be false if you provide credentials
-                    Credentials = new NetworkCredential(SenderEmailAddress, SenderEmailPassword)
+                    Credentials = new NetworkCredential(SenderEmailAddress, SenderEmailPassword),
+                    Timeout = 10000 // 10 seconds
                 };
 
-                await client.SendMailAsync(
-                new MailMessage(from: SenderEmailAddress,
+                await client.SendMailAsync(new MailMessage(from: SenderEmailAddress,
                                 to: email,
                                 subject,
                                 message

@@ -47,6 +47,16 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("InstructorOnly", p => p.RequireRole("Instructor"));
 });
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy => policy
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -71,6 +81,9 @@ app.UseHttpsRedirection();
 // Order matters:
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Enable CORS
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

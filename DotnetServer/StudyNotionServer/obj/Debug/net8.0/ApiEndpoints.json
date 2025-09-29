@@ -42,6 +42,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "StudyNotionServer.Controllers.AuthController",
+    "Method": "SendEmail",
+    "RelativePath": "api/Auth/sendmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "StudyNotionServer.Controllers.SeederController",
     "Method": "RunSeeder",
     "RelativePath": "api/Seeder/run",
